@@ -9,85 +9,191 @@
     Joshua Hanson | Frontend Developer | UI/UX | React | Elixir | CSS | JS
     | HTML
   </title>
+  <link preconnect href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --zero-black: #000;
       --black: #232923;
       --orange: #ff7500;
       --brand-color: var(--orange);
-      --white: #fff;
-      --body-color: var(--white);
+
+      /* Background palette (beige) */
+      --bg-0: #f4efe6;
+      --bg-1: #efe1cc;
+      --bg-2: #f7f1e7;
+
+      --body-color: var(--black);
     }
 
     body {
       font-size: 1rem;
-      font-family: "Roboto";
-      background-color: var(--black);
+      font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
       color: var(--body-color);
+      margin: 0;
+      min-height: 100vh;
     }
 
     h1 {
-      font-size: 3em;
-      margin-bottom: 0.5em;
+      font-size: clamp(1.9rem, 6vw, 2.5rem);
+      margin: 0 0 1rem;
+      letter-spacing: -0.012em;
+      line-height: 1.12;
+    }
+
+    h2 {
+      margin: 2rem 0 0.75rem;
+      font-size: 1.05rem;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+      font-weight: 700;
+      opacity: 0.85;
+    }
+
+    ul {
+      margin: 0 0 1.25rem;
+      padding-left: 1.15rem;
+    }
+
+    li {
+      margin: 0 0 0.5rem;
+      font-size: clamp(1.0rem, 3.2vw, 1.15rem);
+      font-weight: 300;
+      line-height: 1.65;
+    }
+
+    .muted {
+      opacity: 0.7;
     }
 
     p {
-      margin-bottom: 1.5em;
-      font-size: 1.3675em;
+      margin: 0 0 1rem;
+      font-size: clamp(1.05rem, 3.5vw, 1.275rem);
       font-weight: 300;
-      line-height: 1.75;
+      line-height: 1.7;
     }
 
     a {
       color: var(--brand-color);
+      text-decoration: none;
+      position: relative;
+      display: inline-block;
+      overflow: hidden;
+      vertical-align: top;
+    }
+
+    a::before {
+      content: "";
+      background: var(--brand-color);
+      position: absolute;
+      height: 0.85em;
+      right: -5%;
+      bottom: 0.1em;
+      left: 0;
+      transform: translateX(-200%);
+      transition: transform 0.5s ease-in-out;
+      z-index: -1;
+      opacity: 0.16;
+    }
+
+    a:hover::before,
+    a:focus-visible::before {
+      transform: translateX(0);
+    }
+
+    a:focus-visible {
+      outline: 2px solid color-mix(in srgb, var(--brand-color) 55%, transparent);
+      outline-offset: 3px;
+      border-radius: 6px;
+    }
+
+    main {
+      display: flex;
+      justify-content: center;
+    }
+
+    .container {
+      width: min(820px, calc(100vw - 1.5rem));
+      margin: 0.75rem auto;
+      padding: 2.25rem 1.25rem 2rem;
+    }
+
+    @media (min-width: 768px) {
+
+      .container {
+        width: min(820px, calc(100vw - 4rem));
+        margin: 4rem auto;
+        padding: 4rem 4rem 3.5rem;
+      }
+
+      p {
+        margin-bottom: 1.25em;
+        line-height: 1.75;
+      }
     }
   </style>
   <meta name="description"
-    content="I work with the team @Hifyre building eCommerce and SaaS products for the cannabis industry. My role includes building new frontend components, maintaining the component library, and reviewing code that affects the frontend.">
-  <meta property="og:title" content="Home">
+    content="Joshua Hanson is a frontend developer in Canada focused on UI/UX, performance, accessibility, and maintainable frontend code. Formerly at Hifyre building ecommerce and internal tools for cannabis retail.">
+
+  <link rel="canonical" href="https://joshhanson.ca/" />
+
+  <meta property="og:site_name" content="Joshua Hanson" />
+  <meta property="og:title" content="Joshua Hanson | Frontend Developer" />
   <meta property="og:description"
-    content="I work with the team @Hifyre building eCommerce and SaaS products for the cannabis industry. My role includes building new frontend components, maintaining the component library, and reviewing code that affects the frontend.">
-  <meta property="og:type" content="website">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:creator" content="@joshhanson">
-  <meta name="twitter:title" content="Home">
+    content="Frontend developer in Canada focused on UI/UX, performance, accessibility, and maintainable frontend code. Formerly at Hifyre building ecommerce and internal tools." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://joshhanson.ca/" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:creator" content="@joshhanson" />
+  <meta name="twitter:title" content="Joshua Hanson | Frontend Developer" />
   <meta name="twitter:description"
-    content="I work with the team @Hifyre building eCommerce and SaaS products for the cannabis industry. My role includes building new frontend components, maintaining the component library, and reviewing code that affects the frontend.">
-  <meta name="keywords" content="Frontend Development, UI, UX. eCommerce, React, Elixir, CSS, JS">
-  <meta name="theme-color" content="#ff7500">
+    content="Frontend developer in Canada focused on UI/UX, performance, accessibility, and maintainable frontend code. Formerly at Hifyre building ecommerce and internal tools." />
+
+  <meta name="keywords"
+    content="Joshua Hanson, frontend developer, UI, UX, accessibility, performance, React, JavaScript, HTML, CSS, SCSS" />
+  <meta name="theme-color" content="#ff7500" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 </head>
 
 <body>
   <main>
-    <div class="container" style="padding: 5em 1em; max-width: 800px; margin: 0 auto;">
+    <div class="container">
       <h1>Hi there 👋</h1>
+
       <p>
-        I'm Joshua Hanson - I work with the team
-        <a href="https://hifyreretail.com/">@Hifyre</a> building
-        eCommerce and SaaS products for the cannabis industry.
+        I'm Joshua Hanson, a frontend developer based in 🇨🇦.
       </p>
 
       <p>
-        I specialize in frontend development, with a focus in UI/UX, site
-        performance, and accessibility (A11Y).
+        I build web applications, ecommerce platforms, and user interfaces with a focus on UI/UX, performance,
+        accessibility, and maintainable frontend code.
       </p>
 
       <p>
-        Over the years I've developed robust skills with Javascript,
-        React, SCSS/CSS, HTML, Elixir, Phoenix, Magento, and many more.
+        Most recently, I worked at Hifyre building software for the cannabis retail industry, including ecommerce
+        experiences, internal tools, component systems, in-store displays, and self-ordering kiosks.
+      </p>
+
+      <p>
+        Over the years I've worked with JavaScript, React, SCSS/CSS, HTML, Elixir, Phoenix, Magento, WordPress,
+        Shopify, and a handful of other tools that seemed like a good idea at the time.
+      </p>
+
+      <p>
+        I'm currently looking for my next frontend role, especially one that overlaps with UI, UX, performance, and
+        product work.
       </p>
 
       <p>
         My LinkedIn:
-        <a href="https://www.linkedin.com/in/hansonjoshua/">
+        <a rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/hansonjoshua/">
           linkedin.com/in/hansonjoshua
         </a>
       </p>
     </div>
   </main>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
 </body>
 
 </html>
