@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <title>Joshua Hanson | Resume</title>
+  <meta name="description"
+    content="Resume for Joshua Hanson, Frontend Engineer. Experience across React, Phoenix LiveView, ecommerce, component systems, performance, accessibility, and product-focused UI work." />
+
+  <meta property="og:site_name" content="Joshua Hanson" />
+  <meta property="og:title" content="Joshua Hanson | Resume" />
+  <meta property="og:description"
+    content="Resume for Joshua Hanson, Frontend Engineer. Experience across React, Phoenix LiveView, ecommerce, component systems, performance, accessibility, and product-focused UI work." />
+  <meta property="og:type" content="website" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:creator" content="@joshhanson" />
+  <meta name="twitter:title" content="Joshua Hanson | Resume" />
+  <meta name="twitter:description"
+    content="Resume for Joshua Hanson, Frontend Engineer. Experience across React, Phoenix LiveView, ecommerce, component systems, performance, accessibility, and product-focused UI work." />
+
+  <meta name="theme-color" content="#ff7500" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+
+  <style>
+    :root {
+      --ink: #232923;
+      --bg: #f4efe6;
+      --rule: rgba(35, 41, 35, 0.12);
+      --brand: #ff7500;
+      --page: 900px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.45;
+    }
+
+    a {
+      color: var(--brand);
+      text-decoration: none;
+      position: relative;
+      display: inline-block;
+      overflow: hidden;
+      vertical-align: top;
+    }
+
+    a::before {
+      content: "";
+      background: var(--brand);
+      position: absolute;
+      height: 0.85em;
+      right: -5%;
+      bottom: 0.1em;
+      left: 0;
+      transform: translateX(-200%);
+      transition: transform 0.5s ease-in-out;
+      z-index: -1;
+      opacity: 0.16;
+    }
+
+    a:hover::before,
+    a:focus-visible::before {
+      transform: translateX(0);
+    }
+
+    a:focus-visible {
+      outline: 2px solid color-mix(in srgb, var(--brand) 55%, transparent);
+      outline-offset: 3px;
+      border-radius: 6px;
+    }
+
+    main {
+      display: flex;
+      justify-content: center;
+      padding: 0.75rem;
+    }
+
+    .page {
+      width: min(var(--page), calc(100vw - 1.5rem));
+      margin: 0.75rem auto;
+      padding: 2.25rem 1.25rem 2rem;
+      background: rgba(255, 255, 255, 0.92);
+      border: 1px solid rgba(35, 41, 35, 0.10);
+      border-radius: 24px;
+      box-shadow: 0 18px 50px rgba(35, 41, 35, 0.10);
+    }
+
+    header {
+      padding-bottom: 1.25rem;
+      border-bottom: 1px solid var(--rule);
+      margin-bottom: 1.75rem;
+    }
+
+    h1 {
+      margin: 0 0 0.35rem;
+      font-size: clamp(1.8rem, 5.2vw, 2.4rem);
+      letter-spacing: -0.015em;
+      line-height: 1.1;
+    }
+
+    .role {
+      font-weight: 700;
+      margin: 0 0 0.85rem;
+      color: var(--ink);
+    }
+
+    .contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem 0.75rem;
+      color: var(--ink);
+      font-weight: 500;
+    }
+
+    .contact span {
+      white-space: nowrap;
+    }
+
+    section {
+      margin: 0 0 1.25rem;
+    }
+
+    h2 {
+      margin: 0 0 0.85rem;
+      font-size: 0.95rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      font-weight: 800;
+      opacity: 0.85;
+    }
+
+    .job {
+      margin: 0;
+      padding: 0;
+    }
+
+    hr {
+      border: 0;
+      height: 1px;
+      background: #efefef;
+      margin: 1.25rem 0;
+    }
+
+    .job-dates {
+      font-weight: 600;
+      color: var(--ink);
+      margin: 0 0 0.35rem;
+    }
+
+    .job-line {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      align-items: baseline;
+      margin: 0 0 0.55rem;
+    }
+
+    .job-title,
+    .job-company {
+      font-weight: 800;
+      color: var(--ink);
+    }
+
+    .summary {
+      color: var(--ink);
+      margin: 0.25rem 0 0.85rem;
+    }
+
+    ul {
+      margin: 0.35rem 0 0;
+      padding-left: 1.15rem;
+    }
+
+    li {
+      margin: 0 0 0.5rem;
+      font-weight: 400;
+    }
+
+    .tech {
+      margin-top: 0.75rem;
+      color: var(--ink);
+      font-weight: 500;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0.65rem;
+    }
+
+    @media (min-width: 768px) {
+      main {
+        padding: 2rem;
+      }
+
+      .page {
+        width: min(var(--page), calc(100vw - 4rem));
+        margin: 4rem auto;
+        padding: 4rem 4rem 3.5rem;
+      }
+
+      .grid-2 {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media print {
+      body {
+        background: #fff;
+      }
+
+      main {
+        padding: 0;
+      }
+
+      .page {
+        margin: 0;
+        width: 100%;
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      a::before {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <article class="page">
+      <header>
+        <h1>Joshua Hanson</h1>
+        <div class="contact">
+          <span><a href="https://joshhanson.ca" target="_blank" rel="noopener noreferrer">joshhanson.ca</a></span>
+          <span>|</span>
+          <span><a href="https://www.linkedin.com/in/hansonjoshua/" target="_blank"
+              rel="noopener noreferrer">linkedin.com/in/hansonjoshua</a></span>
+        </div>
+      </header>
+
+      <section>
+        <h2>Work Experience</h2>
+
+        <div class="job">
+          <p class="job-dates">May 2019 – Present</p>
+          <p class="job-line">
+            <span class="job-title">Frontend Developer</span>
+            <span class="job-company">Hifyre</span>
+          </p>
+          <p class="summary">
+            Cannabis retail platform supporting 200+ stores across Canada, including ecommerce, self-ordering kiosks,
+            in-store displays, internal tools, wholesale workflows, and shared UI systems.
+          </p>
+          <ul>
+            <li>Developed frontend features across Phoenix LiveView and React applications, including ecommerce pages,
+              product cards, filters, landing pages, internal management screens, and kiosk interfaces</li>
+            <li>Built and refactored reusable UI components within a shared monorepo component library, reducing
+              duplicated UI patterns across multiple applications</li>
+            <li>Implemented frontend performance and UX improvements, including skeleton loading states, layout shift
+              reduction, lazy-loading patterns, and improved loading behaviour for ads, product cards, and page content
+            </li>
+            <li>Collaborated with product managers and designers on new feature development, Figma handoffs, UI
+              iteration, and component-level implementation details</li>
+            <li>Added analytics and event tracking for customer actions, and contributed to SEO, accessibility,
+              metadata, and structured content improvements</li>
+          </ul>
+          <p class="tech"><strong>Technologies:</strong> Phoenix LiveView, Elixir, JavaScript, React, Redux, HTML,
+            CSS/SCSS</p>
+        </div>
+
+        <hr />
+
+        <div class="job">
+          <p class="job-dates">November 2017 – May 2019</p>
+          <p class="job-line">
+            <span class="job-title">Frontend Developer</span>
+            <span class="job-company">Form &amp; Affect</span>
+          </p>
+          <p class="summary">
+            Client-focused agency work across ecommerce, media, tourism, nonprofits, wineries, and local businesses.
+          </p>
+          <ul>
+            <li>Built custom websites, web applications, CMS themes, and frontend components from designer mockups</li>
+            <li>Developed and customized WordPress, ExpressionEngine, and Shopify sites, including custom themes,
+              plugins, and frontend functionality</li>
+            <li>Integrated REST APIs into websites and web applications for dynamic and real-time content</li>
+            <li>Built a React-based progressive web app with service workers and offline support</li>
+            <li>Developed interactive sites for CBC Sports, including fast-turnaround work during the Winter Olympics
+            </li>
+          </ul>
+          <p class="tech"><strong>Technologies:</strong> JavaScript, React, HTML, CSS/SCSS, WordPress, Shopify,
+            ExpressionEngine, REST APIs, service workers</p>
+        </div>
+
+        <hr />
+
+        <div class="job">
+          <p class="job-dates">2017</p>
+          <p class="job-line">
+            <span class="job-title">Web Developer</span>
+            <span class="job-company">Northern Commerce</span>
+          </p>
+          <p class="summary">
+            Magento ecommerce development within a larger structured development team.
+          </p>
+          <ul>
+            <li>Built custom Magento and Magento 2 themes, frontend components, modules, and plugins</li>
+            <li>Created product import scripts for migrating client data into new Magento builds</li>
+            <li>Participated in cross-functional design and development reviews</li>
+            <li>Prepared technical estimates with subtasks, dependencies, timelines, and implementation risks</li>
+            <li>Worked within structured Git workflows, task tracking, and code review processes</li>
+          </ul>
+          <p class="tech"><strong>Technologies:</strong> Magento, Magento 2, PHP, JavaScript, SASS, HTML, CSS, Git
+          </p>
+        </div>
+
+        <hr />
+
+        <div class="job">
+          <p class="job-dates">2016</p>
+          <p class="job-line">
+            <span class="job-title">Designer &amp; Developer</span>
+            <span class="job-company">Niagara College Research &amp; Innovation</span>
+          </p>
+          <p class="summary">
+            Applied research role spanning UX/UI design, web development, mobile development, and client-facing project
+            work.
+          </p>
+          <ul>
+            <li>Created UX/UI deliverables including storyboards, wireframes, mockups, and information architecture</li>
+            <li>Designed and developed custom WordPress sites, themes, plugins, and a member portal for an industry
+              client</li>
+            <li>Built a cross-platform mobile application using Xamarin</li>
+            <li>Presented project updates to management and clients throughout the project lifecycle</li>
+            <li>Led client training sessions for websites, CMS platforms, software tools, and mobile applications</li>
+          </ul>
+          <p class="tech"><strong>Technologies:</strong> WordPress, PHP, HTML, CSS, JavaScript, Xamarin, C#</p>
+        </div>
+      </section>
+      <hr />
+      <section>
+        <h2 style="margin: 0">Skills</h2>
+        <div class="grid-2">
+          <div>
+            <p><strong>Frontend</strong></p>
+            <ul>
+              <li>JavaScript, HTML, CSS/SCSS, React, Redux, Phoenix LiveView</li>
+              <li>Responsive design, component architecture, UI development</li>
+            </ul>
+          </div>
+
+          <div>
+            <p><strong>UX / Product</strong></p>
+            <ul>
+              <li>Figma handoffs, wireframes, mockups, component libraries, design systems</li>
+              <li>Accessibility, user flows, frontend performance, analytics/event tracking</li>
+            </ul>
+          </div>
+
+          <div>
+            <p><strong>Performance</strong></p>
+            <ul>
+              <li>Core Web Vitals, CLS reduction, skeleton loading states</li>
+              <li>Perceived performance, lazy loading, caching, service workers</li>
+            </ul>
+          </div>
+
+          <div>
+            <p><strong>Tools / Platforms</strong></p>
+            <ul>
+              <li>WordPress, Shopify, ExpressionEngine, Magento, Magento 2</li>
+              <li>REST APIs, Git, GitHub, task tracking, technical estimates</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <section>
+        <h2>Education</h2>
+        <p class="job-dates">2014 – 2016</p>
+        <p class="job-line">
+          <span class="job-title">Computer Programmer Analyst — Co-op</span>
+          <span class="job-company">Niagara College</span>
+        </p>
+      </section>
+    </article>
+  </main>
+</body>
+
+</html>
