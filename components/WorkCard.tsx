@@ -39,7 +39,11 @@ export default function WorkCard({
             className="w-full aspect-[16/9] flex items-center justify-center"
             style={{ background: bgColor }}
           >
-            <img src={project.images[0].src} alt={project.title} className="object-cover w-full h-full" />
+            <img
+              src={typeof project.images[0] === "string" ? project.images[0] : project.images[0].src}
+              alt={project.title}
+              className="object-cover w-full h-full"
+            />
           </div>
 
           {/* Card body */}

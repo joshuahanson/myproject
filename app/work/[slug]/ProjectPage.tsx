@@ -3,17 +3,10 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Nav from "@/components/Nav";
+import ProjectImageGrid from "@/components/ProjectImageGrid";
 import { Project } from "@/lib/projects";
 
-const placeholderColors: Record<string, string> = {
-  "hifyre-ecommerce": "#f0ede8",
-  "hifyre-kiosk": "#edeef5",
-  "component-library": "#edf5ed",
-  "cbc-sports": "#f5edee",
-};
-
 export default function ProjectPage({ project }: { project: Project }) {
-  const bgColor = placeholderColors[project.slug] || "#f5f5f5";
 
   return (
     <>
@@ -85,24 +78,7 @@ export default function ProjectPage({ project }: { project: Project }) {
             ))}
           </motion.div>
 
-          {/* Image placeholder */}
-          <div style={{
-            display: "grid",
-            gridTemplateColumns: "1fr 1fr 1fr",
-            gap: "1rem"
-          }}>
-            {project.images.map((img, i) => (
-              <motion.div
-                initial={{ opacity: 0, y: 24 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: 0.25 }}
-                className="w-full rounded-[10%] flex items-center justify-center mb-12"
-                style={{ background: bgColor }}
-              >
-                <img src={project.images[i].src} className="w-full h-full object-cover" alt={`${project.title} screenshot`} />
-              </motion.div>
-            ))}
-          </div>
+          <ProjectImageGrid slug={project.slug} images={project.images} />
 
           {/* Attribution */}
           <motion.p
