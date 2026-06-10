@@ -8,7 +8,7 @@ import skeletonLoading from "../app/images/hifyre/hifyre-skeleton.png"
 import kiosk from "../app/images/hifyre/kiosk.png"
 import storeMenus from "../app/images/hifyre/store-menus.webp"
 import prairie from "../app/images/hifyre/prairierecords.png"
-import fika from "../app/images/hifyre/fika.png"
+import fika from "../app/images/hifyre/hifyre-modal.png"
 
 // CBC IMAGES
 import cbcBelow from "../app/images/cbc/CBC-below-fold.png"
@@ -34,7 +34,7 @@ export const projects: Project[] = [
     shortTitle: "Hifyre Ecommerce",
     tagline:
       "Primary frontend engineer on a cannabis retail platform supporting 200+ stores across Canada.",
-    stack: ["React", "Phoenix LiveView", "Figma"],
+    stack: ["React", "Phoenix LiveView", "Elixir", "CSS", "JavaScript", "Figma"],
     period: "2019–2026",
     attribution: "Built during my time at Hifyre / Fire & Flower (2019–2026)",
     body: [
@@ -43,7 +43,7 @@ export const projects: Project[] = [
       "Day to day work involved constant iteration — A/B testing, one-off marketing campaigns, SEO projects, performance improvements, and new feature development. Over time the scope grew to include new internal management applications, a self-ordering kiosk app, and a shared component library used across all of the platforms.",
       "Larger projects included a full homepage redesign validated through A/B testing, a CMS-driven product carousel that gave marketing a proper tool for brand partnership campaigns, a site-wide skeleton loading system that improved perceived performance, and a product page redesign that was later adopted across the cart, kiosk, and tablet interfaces.",
     ],
-    images: [prairie, reactHome, reactSpark, skeletonLoaded, fika],
+    images: [prairie],
   },
   {
     slug: "hifyre-kiosk",
@@ -51,7 +51,7 @@ export const projects: Project[] = [
     shortTitle: "Hifyre Kiosk",
     tagline:
       "Adapted a tablet UI to a 1080x1920 portrait kiosk display. Shipped across retail locations.",
-    stack: ["React", "Phoenix LiveView", "CSS"],
+    stack: ["React", "Phoenix LiveView", "Elixir", "CSS", "JavaScript", "Figma"],
     period: "2019–2026",
     attribution: "Built during my time at Hifyre / Fire & Flower (2019–2026)",
     body: [
@@ -66,7 +66,7 @@ export const projects: Project[] = [
     shortTitle: "Component Library",
     tagline:
       "Built and standardized a shared component system used across multiple apps and platforms.",
-    stack: ["React", "JavaScript", "CSS/SCSS"],
+    stack: ["Phoenix LiveView", "Elixir", "CSS/SCSS", "Figma"],
     period: "2019–2026",
     attribution: "Built during my time at Hifyre / Fire & Flower (2019–2026)",
     body: [

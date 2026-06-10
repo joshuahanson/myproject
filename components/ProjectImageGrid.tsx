@@ -22,14 +22,10 @@ const layouts: Record<string, GridConfig> = {
   // 5 images: [0]prairie L, [1]reactHome L, [2]reactSpark L, [3]skeletonLoaded P, [4]fika P
   // Portraits bookend the two stacked landscapes; reactSpark runs full-width below.
   "hifyre-ecommerce": {
-    templateColumns: "1fr 1fr 1fr",
-    templateRows: "280px 280px 380px",
+    templateColumns: "1fr",
+    templateRows: "auto",
     items: [
-      { imageIndex: 4, gridColumn: "1",     gridRow: "1 / 3", objectPosition: "top" }, // fika portrait
-      { imageIndex: 0, gridColumn: "2",     gridRow: "1" },                             // prairie landscape
-      { imageIndex: 1, gridColumn: "2",     gridRow: "2" },                             // reactHome landscape
-      { imageIndex: 3, gridColumn: "3",     gridRow: "1 / 3", objectPosition: "top" }, // skeletonLoaded portrait
-      { imageIndex: 2, gridColumn: "1 / 4", gridRow: "3" },                             // reactSpark full-width
+      { imageIndex: 0, gridColumn: "1", gridRow: "1" },                             // prairie landscape
     ],
   },
 
@@ -47,7 +43,7 @@ const layouts: Record<string, GridConfig> = {
   // 2 images: [0]skeletonLoading P, [1]skeletonLoaded P — before/after, both portrait
   "component-library": {
     templateColumns: "1fr 1fr",
-    templateRows: "480px",
+    templateRows: "auto",
     items: [
       { imageIndex: 0, gridColumn: "1", gridRow: "1", objectPosition: "top" },
       { imageIndex: 1, gridColumn: "2", gridRow: "1", objectPosition: "top" },
@@ -60,9 +56,9 @@ const layouts: Record<string, GridConfig> = {
     templateColumns: "2fr 3fr",
     templateRows: "260px 260px",
     items: [
-      { imageIndex: 2, gridColumn: "1",     gridRow: "1 / 3" }, // cbcMobile portrait
-      { imageIndex: 0, gridColumn: "2",     gridRow: "1" },      // cbcHero landscape
-      { imageIndex: 1, gridColumn: "2",     gridRow: "2" },      // cbcBelow landscape
+      { imageIndex: 2, gridColumn: "1", gridRow: "1 / 3" }, // cbcMobile portrait
+      { imageIndex: 0, gridColumn: "2", gridRow: "1" },      // cbcHero landscape
+      { imageIndex: 1, gridColumn: "2", gridRow: "2" },      // cbcBelow landscape
     ],
   },
 };
@@ -102,7 +98,7 @@ export default function ProjectImageGrid({
         display: "grid",
         gridTemplateColumns: layout.templateColumns,
         gridTemplateRows: layout.templateRows,
-        gap: layout.gap ?? "12px",
+        gap: layout.gap ?? "1rem",
       }}
       className="mb-12"
     >

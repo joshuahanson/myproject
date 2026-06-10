@@ -12,7 +12,7 @@ export default function ProjectPage({ project }: { project: Project }) {
     <>
       <Nav />
       <main className="min-h-screen pt-24 pb-24 px-6">
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-5xl mx-auto">
 
           {/* Back link */}
           <motion.div
