@@ -12,9 +12,9 @@ export default function Nav() {
       <div className="max-w-5xl mx-auto flex items-center justify-between">
         <Link
           href="/"
-          className="text-sm font-semibold text-[#111] tracking-tight hover:text-[#ff7500] transition-colors duration-200"
+          className="text-sm font-semibold text-[#111] bg-[#ff750011] p-4 tracking-tight rounded-full hover:text-[#ff7500] transition-colors duration-200"
         >
-          Josh Hanson
+          JH
         </Link>
         <div className="flex items-center gap-6">
           {isHome ? (

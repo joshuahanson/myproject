@@ -31,7 +31,7 @@ export default function WorkCard({
         <motion.div
           whileHover={{ y: -4, boxShadow: "0 20px 48px rgba(0,0,0,0.10)" }}
           transition={{ duration: 0.2 }}
-          className="bg-white border border-[#e8e8e8] rounded-[24px] overflow-hidden cursor-pointer"
+          className="bg-white border border-[#e8e8e8] rounded-[15%] overflow-hidden cursor-pointer"
           style={{ boxShadow: "0 2px 12px rgba(0,0,0,0.04)" }}
         >
           {/* Image placeholder */}
@@ -39,9 +39,7 @@ export default function WorkCard({
             className="w-full aspect-[16/9] flex items-center justify-center"
             style={{ background: bgColor }}
           >
-            <span className="text-xs font-medium text-[#999] tracking-wide uppercase">
-              {project.shortTitle}
-            </span>
+            <img src={project.images[0].src} alt={project.title} className="object-cover w-full h-full" />
           </div>
 
           {/* Card body */}

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
-    <section className="min-h-screen flex flex-col justify-center px-6 pt-24 pb-16">
+    <section className="min-h-[750px] flex flex-col justify-center px-6 pt-24 pb-16">
       <div className="max-w-5xl mx-auto w-full">
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -19,7 +19,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
-          className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#111] leading-[1.1] tracking-tight mb-8 max-w-3xl"
+          className="text-4xl sm:text-5xl md:text-6xl font-bold text-[#111] leading-[1.1] tracking-tight mb-8"
         >
           I build interfaces that look right, load fast, and hold up at scale.
         </motion.h1>
@@ -28,7 +28,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.35 }}
-          className="text-lg text-[#555] max-w-xl mb-10 leading-relaxed"
+          className="text-lg text-[#555] mb-10 leading-relaxed"
         >
           Frontend Engineer with a strong focus on component architecture,
           design systems, and performance.

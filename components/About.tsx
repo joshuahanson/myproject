@@ -26,7 +26,7 @@ export default function About() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-60px" }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="max-w-2xl space-y-5"
+          className="space-y-5"
         >
           <p className="text-base text-[#444] leading-relaxed">
             I'm a Frontend Engineer based in Niagara Falls, Ontario, with nearly

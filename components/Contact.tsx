@@ -24,12 +24,6 @@ export default function Contact() {
 
           <div className="flex flex-wrap gap-4">
             <a
-              href="mailto:joshhanson.ca@gmail.com"
-              className="inline-flex items-center gap-2 bg-[#111] text-white text-sm font-semibold px-5 py-3 rounded-full hover:bg-[#ff7500] transition-colors duration-200"
-            >
-              joshhanson.ca@gmail.com
-            </a>
-            <a
               href="https://linkedin.com/in/hansonjoshua"
               target="_blank"
               rel="noopener noreferrer"

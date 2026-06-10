@@ -49,7 +49,7 @@ export default function ProjectPage({ project }: { project: Project }) {
             <h1 className="text-3xl sm:text-4xl font-bold text-[#111] tracking-tight mb-4 leading-tight">
               {project.title}
             </h1>
-            <p className="text-lg text-[#555] leading-relaxed max-w-xl">
+            <p className="text-lg text-[#555] leading-relaxed">
               {project.tagline}
             </p>
           </motion.div>
@@ -71,19 +71,6 @@ export default function ProjectPage({ project }: { project: Project }) {
             ))}
           </motion.div>
 
-          {/* Image placeholder */}
-          <motion.div
-            initial={{ opacity: 0, y: 24 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.25 }}
-            className="w-full aspect-[16/9] rounded-[24px] flex items-center justify-center mb-12"
-            style={{ background: bgColor }}
-          >
-            <span className="text-xs font-medium text-[#999] tracking-wide uppercase">
-              {project.shortTitle}
-            </span>
-          </motion.div>
-
           {/* Body copy */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -97,6 +84,25 @@ export default function ProjectPage({ project }: { project: Project }) {
               </p>
             ))}
           </motion.div>
+
+          {/* Image placeholder */}
+          <div style={{
+            display: "grid",
+            gridTemplateColumns: "1fr 1fr 1fr",
+            gap: "1rem"
+          }}>
+            {project.images.map((img, i) => (
+              <motion.div
+                initial={{ opacity: 0, y: 24 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.25 }}
+                className="w-full rounded-[10%] flex items-center justify-center mb-12"
+                style={{ background: bgColor }}
+              >
+                <img src={project.images[i].src} className="w-full h-full object-cover" alt={`${project.title} screenshot`} />
+              </motion.div>
+            ))}
+          </div>
 
           {/* Attribution */}
           <motion.p
