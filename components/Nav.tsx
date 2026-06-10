@@ -8,13 +8,16 @@ export default function Nav() {
   const isHome = pathname === "/";
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 px-6 py-5">
+    <nav
+      className="fixed top-0 left-0 right-0 z-50 px-6 py-5"
+      style={{ background: "linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(255,255,255,0.85) 60%, rgba(255,255,255,0) 100%)" }}
+    >
       <div className="max-w-5xl mx-auto flex items-center justify-between">
         <Link
           href="/"
-          className="text-sm font-semibold text-[#111] bg-[#ff750011] p-4 tracking-tight rounded-full hover:text-[#ff7500] transition-colors duration-200"
+          className="text-sm font-semibold text-[#111] tracking-tight hover:text-[#ff7500] transition-colors duration-200"
         >
-          JH
+          Josh Hanson
         </Link>
         <div className="flex items-center gap-6">
           {isHome ? (

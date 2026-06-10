@@ -100,7 +100,7 @@ export default function ProjectImageGrid({
         gridTemplateRows: layout.templateRows,
         gap: layout.gap ?? "1rem",
       }}
-      className="mb-12"
+      className="project-image-grid mb-12"
     >
       {layout.items.map(({ imageIndex, gridColumn, gridRow, objectPosition }) => {
         const img = images[imageIndex];

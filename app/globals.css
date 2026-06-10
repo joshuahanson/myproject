@@ -22,3 +22,16 @@ body {
   color: #111111;
   font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, sans-serif;
 }
+
+/* Collapse image grids to single column on mobile */
+@media (max-width: 639px) {
+  .project-image-grid {
+    grid-template-columns: 1fr !important;
+    grid-template-rows: auto !important;
+  }
+  .project-image-grid > div {
+    grid-column: 1 !important;
+    grid-row: auto !important;
+    height: 260px;
+  }
+}
