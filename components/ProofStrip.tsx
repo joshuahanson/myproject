@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const stats = [
   {
-    value: "8+ years",
+    value: "10 years",
     label: "Frontend development across product teams, ecommerce platforms, and agency work.",
   },
   {
