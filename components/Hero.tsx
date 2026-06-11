@@ -41,18 +41,16 @@ export default function Hero() {
           className="flex flex-wrap gap-3"
         >
           <a
-            href="/resume"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#contact"
             className="inline-flex items-center gap-2 bg-[#111] text-white text-sm font-semibold px-5 py-3 rounded-full hover:bg-[#ff7500] transition-colors duration-200"
           >
-            Download Resume
+            Get in touch
           </a>
           <a
-            href="#work"
+            href="/resume"
             className="inline-flex items-center gap-2 border border-[#e8e8e8] text-[#111] text-sm font-semibold px-5 py-3 rounded-full hover:border-[#111] transition-colors duration-200"
           >
-            View Work ↓
+            View Resume
           </a>
         </motion.div>
       </div>

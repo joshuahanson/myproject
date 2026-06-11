@@ -2,7 +2,7 @@ import Nav from "@/components/Nav";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Resume — Josh Hanson",
+  title: "Resume",
   description:
     "Resume for Joshua Hanson, Frontend Engineer. Experience across React, Phoenix LiveView, ecommerce, component systems, performance, accessibility, and product-focused UI work.",
 };

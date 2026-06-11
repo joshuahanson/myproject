@@ -15,8 +15,13 @@ export async function generateMetadata({
   const project = getProject(slug);
   if (!project) return {};
   return {
-    title: `${project.title} — Josh Hanson`,
+    title: project.title,
     description: project.tagline,
+    openGraph: {
+      title: project.title,
+      description: project.tagline,
+      url: `https://joshhanson.ca/work/${slug}`,
+    },
   };
 }
 
