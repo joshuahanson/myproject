@@ -29,19 +29,18 @@ export default function About() {
           className="space-y-5"
         >
           <p className="text-base text-[#444] leading-relaxed">
-            I think frontend quality increasingly comes down to the systems
-            underneath it. As AI-assisted development becomes more common,
-            reusable components, clear patterns, and good defaults matter even
-            more. I've spent years building and standardizing shared component
-            libraries, and it's the kind of work I enjoy most.
+            Frontend quality comes down to the systems underneath it. As
+            AI-assisted development becomes more common, reusable components,
+            clear patterns, and good defaults matter more than ever. I've spent
+            years building and standardizing shared component libraries. It's the
+            work I find most interesting and do best.
           </p>
           <p className="text-base text-[#444] leading-relaxed">
-            I'm a frontend engineer with nearly a decade of experience building
-            production web applications across ecommerce platforms, agency work,
-            internal tools, and component systems. My strongest work sits between
-            engineering and design — reusable components, interaction patterns,
-            performance improvements, and the small UI details that make software
-            easier to use.
+            I'm a frontend engineer with nearly a decade of experience across
+            ecommerce platforms, agency work, and internal tooling. My strongest
+            work sits at the overlap of engineering and design: reusable
+            components, interaction patterns, performance improvements, and the
+            small UI details that make software feel right.
           </p>
         </motion.div>
       </div>
