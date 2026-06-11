@@ -10,26 +10,26 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "Josh Hanson — Frontend Engineer",
-    template: "%s — Josh Hanson",
+    default: "Joshua Hanson — Frontend Engineer",
+    template: "%s — Joshua Hanson",
   },
   description:
-    "Frontend Engineer based in Niagara Falls, Ontario. Nearly a decade of experience building production web applications with a focus on component architecture, design systems, and performance.",
+    "Frontend engineer with nearly a decade of experience across ecommerce platforms, agency work, and internal tooling. Strong focus on component architecture, design systems, and performance.",
   metadataBase: new URL("https://joshhanson.ca"),
   openGraph: {
-    title: "Josh Hanson — Frontend Engineer",
+    title: "Joshua Hanson — Frontend Engineer",
     description:
-      "Frontend Engineer based in Niagara Falls, Ontario. Nearly a decade of experience building production web applications with a focus on component architecture, design systems, and performance.",
+      "Frontend engineer with nearly a decade of experience across ecommerce platforms, agency work, and internal tooling. Strong focus on component architecture, design systems, and performance.",
     url: "https://joshhanson.ca",
-    siteName: "Josh Hanson",
+    siteName: "Joshua Hanson",
     locale: "en_CA",
     type: "website",
   },
   twitter: {
     card: "summary",
-    title: "Josh Hanson — Frontend Engineer",
+    title: "Joshua Hanson — Frontend Engineer",
     description:
-      "Frontend Engineer based in Niagara Falls, Ontario. Component architecture, design systems, performance.",
+      "Frontend engineer with nearly a decade of experience. Component architecture, design systems, performance.",
   },
   alternates: {
     canonical: "https://joshhanson.ca",
@@ -43,19 +43,13 @@ export const metadata: Metadata = {
 const personSchema = {
   "@context": "https://schema.org",
   "@type": "Person",
-  name: "Josh Hanson",
+  name: "Joshua Hanson",
   url: "https://joshhanson.ca",
   jobTitle: "Frontend Engineer",
   description:
-    "Frontend Engineer with a strong focus on component architecture, design systems, and performance.",
+    "Frontend engineer with a strong focus on component architecture, design systems, and performance.",
   email: "joshhanson.ca@gmail.com",
   sameAs: ["https://linkedin.com/in/hansonjoshua"],
-  address: {
-    "@type": "PostalAddress",
-    addressLocality: "Niagara Falls",
-    addressRegion: "Ontario",
-    addressCountry: "CA",
-  },
 };
 
 export default function RootLayout({

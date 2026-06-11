@@ -22,7 +22,13 @@ export default function Contact() {
             Open to frontend engineering and design systems roles.
           </p>
 
-          <div className="flex flex-wrap gap-4">
+          <div className="flex flex-wrap gap-3">
+            <a
+              href="mailto:joshhanson.ca@gmail.com"
+              className="inline-flex items-center gap-2 bg-[#111] text-white text-sm font-semibold px-5 py-3 rounded-full hover:bg-[#ff7500] transition-colors duration-200"
+            >
+              Email
+            </a>
             <a
               href="https://linkedin.com/in/hansonjoshua"
               target="_blank"

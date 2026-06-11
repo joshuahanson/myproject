@@ -17,7 +17,7 @@ export default function Nav() {
           href="/"
           className="text-sm font-semibold text-[#111] tracking-tight hover:text-[#ff7500] transition-colors duration-200"
         >
-          Josh Hanson
+          Joshua Hanson
         </Link>
         <div className="flex items-center gap-6">
           {isHome ? (

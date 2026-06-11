@@ -12,7 +12,7 @@ export default function Hero() {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="text-sm font-semibold text-[#ff7500] uppercase tracking-widest mb-6"
         >
-          Josh Hanson
+          Joshua Hanson
         </motion.p>
 
         <motion.h1
