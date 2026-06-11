@@ -1,19 +1,16 @@
 import type { StaticImageData } from "next/image"
 
 // HIFYRE IMAGES
-import reactHome from "../app/images/hifyre/faf-react-home.jpg"
-import reactSpark from "../app/images/hifyre/faf-react-spark.jpg"
-import skeletonLoaded from "../app/images/hifyre/hifyre-loaded.png"
-import skeletonLoading from "../app/images/hifyre/hifyre-skeleton.png"
-import kiosk from "../app/images/hifyre/kiosk.png"
+import skeletonLoaded from "../app/images/hifyre/hifyre-loaded.webp"
+import skeletonLoading from "../app/images/hifyre/hifyre-skeleton.webp"
+import kiosk from "../app/images/hifyre/kiosk.webp"
 import storeMenus from "../app/images/hifyre/store-menus.webp"
-import prairie from "../app/images/hifyre/prairierecords.png"
-import fika from "../app/images/hifyre/hifyre-modal.png"
+import prairie from "../app/images/hifyre/prairierecords.webp"
 
 // CBC IMAGES
-import cbcBelow from "../app/images/cbc/CBC-below-fold.png"
-import cbcHero from "../app/images/cbc/CBC-hero.png"
-import cbcMobile from "../app/images/cbc/CBC-mobile.png"
+import cbcBelow from "../app/images/cbc/CBC-below-fold.webp"
+import cbcHero from "../app/images/cbc/CBC-hero.webp"
+import cbcMobile from "../app/images/cbc/CBC-mobile.webp"
 
 export interface Project {
   slug: string;
